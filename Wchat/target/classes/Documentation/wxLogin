@@ -1,0 +1,26 @@
+微信登录流程：
+    1、前端调用 wx.login()
+     |
+     V
+    2、返回微信 code
+     |
+     V
+    3、发起后台请求
+     |
+     V
+    4、后台接受code，发起微信请求
+     |
+     V
+    5、获取opendId， sessionId
+     |
+     V
+    6、返回前台
+
+相关文档
+    https://blog.csdn.net/yan245294305/article/details/84993265
+    https://qq52o.me/1896.html
+
+    opendId 是用户对应小程序的唯一id 号码
+    可以使用opendId，查询数据库判定当前用户是首次登录（注册用户），还是之前登录过的
+
+

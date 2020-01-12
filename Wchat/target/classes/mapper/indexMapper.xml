@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wchat.secondhand.index.IndexMapper">
+    <select id = "getItemsList" resultType="com.wchat.secondhand.entity.Items">
+        select address, description, price, location from t_items
+    </select>
+
+
+    <insert id = "insertItems" parameterType="com.wchat.secondhand.entity.Items">
+        insert into t_items
+        (address, description, price, location)
+        values
+        (#{address}, #{description}, #{price}, #{location})
+    </insert>
+
+</mapper>
