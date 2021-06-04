@@ -84,7 +84,7 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.5.2</version>
+            <version>4.5.13</version>
         </dependency>
 
         <!--json 数据类型的操作，可以将json 转换为其他类型，也可以将其他数据类型转换为json的数据格式-->
